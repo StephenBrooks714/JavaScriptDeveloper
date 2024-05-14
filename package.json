@@ -35,9 +35,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
-    "build": "sass ./styles/main.scss:./styles/main.css",
-    "watch": "sass --watch ./styles/main.scss:./styles/style.css",
-    "compile": "sass ./main/main.scss:./styles/main.css"
+    "build": "sass ./public/styles/main.scss:./public/styles/main.css",
+    "watch": "sass --watch ./public/styles/main.scss:./public/styles/style.css",
+    "compile": "sass ./public/styles/main.scss:./public/styles/main.css"
   },
   "keywords": [],
   "author": "",
