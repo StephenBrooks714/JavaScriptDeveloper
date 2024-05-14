@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  background-color: black;
+  color: white;
+}
+
+section.contact-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+section.contact-row .flex-row-reverse {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 862px) {
+  section.contact-row {
+    flex-direction: column;
+  }
+}
+section.contact-row .col-7 {
+  flex: 1;
+  max-width: 60%;
+  padding: 12px;
+}
+@media screen and (max-width: 862px) {
+  section.contact-row .col-7 {
+    width: 100%;
+  }
+}
+section.contact-row form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  max-width: 800px;
+  justify-content: center;
+}
+@media screen and (max-width: 862px) {
+  section.contact-row form {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+section.contact-row form .form-label {
+  display: block;
+  margin-bottom: 5px;
+}
+section.contact-row form .form-control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+section.contact-row form .form-control:focus {
+  outline: 4px solid blue;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  border-color: #007bff;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+section.contact-row form button.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+section.contact-row form .btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+section.contact-row form .btn-primary:hover {
+  background-color: #0069d9;
+}
+section.contact-row .col-5 {
+  flex: 1;
+  max-width: 40%;
+  text-align: start;
+  padding: 12px;
+}
+@media screen and (max-width: 862px) {
+  section.contact-row .col-5 {
+    max-width: 100%;
+  }
+}
+section.contact-row .col-5 h5 {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+section.contact-row .col-5 p {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(244, 90%, 40%);
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+}
+footer section.social-media-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+footer section.social-media-wrapper h6 {
+  margin: 10px;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+footer section.social-media-wrapper a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+footer section.social-media-wrapper a i {
+  font-size: 24px;
+  margin: 10px;
+  color: rgb(255, 255, 255);
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<%- include('layouts/header') -%>
+<body>
+<%- include('layouts/navBar') -%>
+
+<main class="container my-5 py-5">
+    <h1 class="display-1 mb-5">Services I can provide</h1>
+    <section class="flex-row justify-content-center">
+        <div class="col-lg-6 mb-4">
+            <h2 class="display-4">Designs, Development, & Maintenance</h2>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <img src="/assets/services.png" class="img-fluid" alt="Designs">
+        </div>
+    </section>
+    <div class="mb-4">
+        <h3 class="h1"><span class="icon"><i class="fa-solid fa-server"></i></span>Initial Website</h3>
+        <p>
+            Making the initial website from start to finish, including design, development, and deployment. I also can help with hosting if you do not have a hosting provider for your domain,
+            but if you do already have one then I can use that for the app I create for you.
+        </p>
+    </div>
+    <div>
+        <h3 class="h1"><span class="icon"><i class="fa-solid fa-gears"></i></span>Maintaining Website</h3>
+        <p>
+            Maintenance includes rebuilding, upgrading, and adding new features to the website. Updating the app every few years for security reasons, and when libraries change as time goes on.
+            Updates happen to adjust the libraries or frameworks for new code to be used.
+        </p>
+    </div>
+</main>
+
+<%- include('layouts/footer') -%>
+</body>
+</html>
