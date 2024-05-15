@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<%- include('layouts/header') -%>
+<body>
+<%- include('layouts/navBar') -%>
+
+<main class="container my-5 py-5">
+    <section class="flex-row justify-content-center align-items-center" style="height: 60vh;">
+        <div class="col-lg-6">
+            <h1 class="display-4 mb-4">Register Page</h1>
+            <form action="/store/user" method="post" enctype="multipart/form-data">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" id="username" name="username" class="form-control mb-3" required />
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-control mb-3" required />
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" name="password" class="form-control mb-3" required />
+                <button class="btn btn-primary" type="submit">register</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<%- include('layouts/footer') -%>
+</body>
+</html>

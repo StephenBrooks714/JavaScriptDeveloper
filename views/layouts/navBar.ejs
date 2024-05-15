@@ -7,6 +7,13 @@
                 <a href="#contact">Contact</a>
                 <a href="/projects">Projects</a>
                 <a href="/services">Services</a>
+                <hr>
+                <% if(!loggedIn) { %>
+                    <a href="/login" class="nav-link">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                <% } else { %>
+                    <a href="/" class="nav-link">Panel <i class="fa-regular fa-user"></i></a>
+                    <a href="/logout" class="nav-link">Logout <i class="fa-solid fa-right-from-bracket"></i></a>
+                <% } %>
             </div>
         </div>
     </div>
